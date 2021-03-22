@@ -1,12 +1,12 @@
 export const menuData = [
   {
     title: "Teachers/Schools",
-    link: "/teachers",
+    link: "/teachersSchools",
   },
 
   {
     title: "Families/Individuals",
-    link: "/families",
+    link: "/familiesIndividuals",
   },
 
   {

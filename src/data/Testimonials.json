@@ -1,0 +1,20 @@
+[
+  {
+    "img": "../assets/slicings/Ellipse3.png",
+    "alt": "Unlimited Practice",
+    "name": "Teacher",
+    "text": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos. Dolores et quas molestias."
+  },
+  {
+    "img": "../assets/slicings/Ellipse4.png",
+    "alt": "Instant Feedbacks",
+    "name": "Student",
+    "text": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos. Dolores et quas molestias."
+  },
+  {
+    "img": "../assets/slicings/Ellipse5.png",
+    "alt": "Fine-Tune Controls",
+    "name": "Parent",
+    "text": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos. Dolores et quas molestias."
+  }
+]

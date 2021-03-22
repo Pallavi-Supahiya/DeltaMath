@@ -1,0 +1,20 @@
+[
+  {
+    "img": "../assets/slicings/VectorSmartObject-2.png",
+    "alt": "Unlimited Practice",
+    "name": "Unlimited Practice",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "img": "../assets/slicings/VectorSmartObject-3.png",
+    "alt": "Instant Feedbacks",
+    "name": "Instant Feedbacks",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "img": "../assets/slicings/VectorSmartObject-1.png",
+    "alt": "Fine-Tune Controls",
+    "name": "Fine-Tune Controls",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }
+]
