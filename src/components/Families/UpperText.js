@@ -22,7 +22,7 @@ const Container = styled.div`
   width: 100%;
   position: relative;
   top: -250px;
-  margin-bottom: -250px;
+  margin-bottom: -280px;
 `
 const TextContainer = styled.div`
   background-color: #fafafa;

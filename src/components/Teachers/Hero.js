@@ -1,11 +1,18 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
-import { Button } from "../Button"
+import AccountPopup from "./AccountPopup"
 import Image from "../../assets/slicings/Teachers Page/Rectangle3.png"
 
 const Hero = () => {
+  const [openModal, setOpenModal] = useState(false)
+
+  const handleModal = val => {
+    console.log("im in handle", val)
+    setOpenModal(val)
+  }
   return (
     <HeroContainer>
+      {openModal && <AccountPopup openModal={handleModal} />}
       <HeroAll>
         <HeroBg>
           <ImageBg>
@@ -25,7 +32,7 @@ const Hero = () => {
           <HeroItems>
             <HeroItem style={{ borderRight: "2px solid hsla(0,0%,54.5%,.5)" }}>
               <HeroH1>Teachers:</HeroH1>
-              <button to="/">Create Account</button>
+              <button onClick={() => handleModal(true)}>Create Account</button>
             </HeroItem>
             <HeroItem>
               <HeroH1>School Districts:</HeroH1>

@@ -33,15 +33,15 @@ const Contacting = () => {
           <Row>
             <Column>
               <InputField>
-                <Input placeholder="Name" type="text" />
+                <Input placeholder="Name" type="text" value="" />
               </InputField>
               <InputField>
-                <Input placeholder="Email" type="email" />
+                <Input placeholder="Email" type="email" value="" />
               </InputField>
             </Column>
             <Column>
               <TextField>
-                <Text placeholder="Message" />
+                <Text placeholder="Message" value="" />
               </TextField>
             </Column>
           </Row>
