@@ -140,6 +140,7 @@ const LeadershipContainer = styled.div`
   background-color: #fafafa;
   position: relative;
   top: -133px;
+  margin-bottom: -180px;
   padding-bottom: 80px;
   padding-left: 100px;
   padding-right: 100px;

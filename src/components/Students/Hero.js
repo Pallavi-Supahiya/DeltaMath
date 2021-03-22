@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Button } from "../Button"
+
 import AccountCreation from "../Students/AccountCreation"
 import Image from "../../assets/slicings/Students Page/Rectangle3.png"
 
@@ -47,22 +47,15 @@ const Hero = () => {
 
 export default Hero
 const HeroContainer = styled.div`
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
-  opacity: 0.99;
 `
 const HeroAll = styled.div`
   display: flex;
   flex-direction: column;
 `
 const HeroBg = styled.div`
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
-  opacity: 0.99;
+  overflow: hidden;
 `
 const ImageBg = styled.image`
   width: 100%;
@@ -70,9 +63,9 @@ const ImageBg = styled.image`
 `
 const CreateAccount = styled.div`
   position: relative;
-  top: -10px;
+  top: -100px;
   background-color: #303d4e;
-  margin-bottom: 20px;
+  margin-bottom: -100px;
 `
 const DivCreation = styled.div`
   padding: 50px;
