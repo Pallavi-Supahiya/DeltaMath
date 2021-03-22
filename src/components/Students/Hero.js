@@ -1,13 +1,22 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
-
+import AccountPopup from "./AccountPopup"
 import AccountCreation from "../Students/AccountCreation"
 import Image from "../../assets/slicings/Students Page/Rectangle3.png"
 
 const Hero = () => {
+  const [openAccountModal, setOpenAccountModal] = useState(false)
+
+  const handleAccountModal = val => {
+    console.log("im in handle", val)
+    setOpenAccountModal(val)
+  }
   return (
     <>
       <HeroContainer>
+        {openAccountModal && (
+          <AccountPopup openAccountModal={handleAccountModal} />
+        )}
         <HeroAll>
           <HeroBg>
             <ImageBg>
@@ -34,7 +43,9 @@ const Hero = () => {
                 </Line>
               </Description>
               <Creation>
-                <button>Create Account</button>
+                <button onClick={() => handleAccountModal(true)}>
+                  Create Account
+                </button>
               </Creation>
             </DivCreation>
           </CreateAccount>

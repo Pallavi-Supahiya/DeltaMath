@@ -1,40 +1,53 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
+import AccountPopup from "./AccountPopup"
 import { Button } from "../Button"
 import Image from "../../assets/slicings/Students Page/Rectangle17.png"
 
 const AccountCreation = () => {
+  const [openAccountModal, setOpenAccountModal] = useState(false)
+
+  const handleAccountModal = val => {
+    console.log("im in handle", val)
+    setOpenAccountModal(val)
+  }
   return (
-    <Account>
-      <QuickTour>
-        <QuickImage>
-          <img src={Image} alt="img1" />
-        </QuickImage>
-        <QuickInfo>
-          <Title>Watch a quick tour of</Title>
-          <Title
-            style={{
-              paddingBottom: "30px",
-              borderBottom: "2px solid #a5a5a5",
-            }}
-          >
-            DeltaMath for Students.
-          </Title>
-          <button
-            round="true"
-            style={{
-              backgroundColor: "transparent",
-              color: "inherit",
-              border: "2px solid black",
-              marginTop: "50px",
-              marginBottom: "20px",
-            }}
-          >
-            Create Account
-          </button>
-        </QuickInfo>
-      </QuickTour>
-    </Account>
+    <>
+      {openAccountModal && (
+        <AccountPopup openAccountModal={handleAccountModal} />
+      )}
+      <Account>
+        <QuickTour>
+          <QuickImage>
+            <img src={Image} alt="img1" />
+          </QuickImage>
+          <QuickInfo>
+            <Title>Watch a quick tour of</Title>
+            <Title
+              style={{
+                paddingBottom: "30px",
+                borderBottom: "2px solid #a5a5a5",
+              }}
+            >
+              DeltaMath for Students.
+            </Title>
+            <button
+              round="true"
+              style={{
+                backgroundColor: "transparent",
+                color: "inherit",
+                border: "2px solid black",
+                marginTop: "50px",
+                marginBottom: "20px",
+              }}
+              onClick={() => handleAccountModal(true)}
+            >
+              Create Account
+            </button>
+          </QuickInfo>
+        </QuickTour>
+      </Account>
+    </>
   )
 }
 

@@ -41,7 +41,7 @@ const Contacting = () => {
             </Column>
             <Column>
               <TextField>
-                <Text placeholder="Message" value="" />
+                <Text placeholder="Message..." value="" />
               </TextField>
             </Column>
           </Row>
@@ -99,6 +99,7 @@ const Head = styled.p`
   padding-bottom: 10px;
 `
 const Select = styled.select`
+  border-radius: 4px;
   width: calc(100% - 10px);
   color: #bdbdbd;
   background-color: #fff;
@@ -110,24 +111,43 @@ const Select = styled.select`
 `
 const InputField = styled.div`
   margin-bottom: 20px;
-
+  font-weight: 400;
   min-height: 60px;
 `
 const Input = styled.input`
-  border: 1px solid #bdbdbd;
-  width: calc(100% - 10px);
-  margin-bottom: 20px;
-  min-height: 60px;
-  color: #2d2d2d;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5rem;
+
+  letter-spacing: 0.03571em;
+  text-decoration: inherit;
+  text-transform: inherit;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background: trasparent;
+  border: 1px solid;
+  border-radius: 4px;
+  color: #bdbdbd;
+  font-size: 1em;
+  width: 98%;
+  flex: 1 1 auto;
+  height: 100%;
+  padding: 20px 10px;
 `
 const TextField = styled.div`
   margin-bottom: 20px;
 `
 const Text = styled.textarea`
   border-color: #bdbdbd;
-  height: 160px;
+  border-radius: 4px;
+  height: 140px;
+  flex: 1 1 auto;
   width: calc(100% - 10px);
+  font-size: 1em;
   color: #2d2d2d;
+  letter-spacing: 0.03571em;
+  text-decoration: inherit;
+  text-transform: inherit;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  padding: 20px 10px;
 `
 const Btns = styled.button`
   background-color: #303d4e;
