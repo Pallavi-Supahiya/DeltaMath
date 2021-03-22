@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
 
-const AccountPopup = ({ openModal }) => {
+const AccountPopup = ({ openAccountModal }) => {
   return (
     <ModalContainer>
       <Modal>
